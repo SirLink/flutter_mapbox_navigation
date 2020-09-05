@@ -119,8 +119,7 @@ public class NavigationFragment extends Fragment implements OnNavigationReadyCal
     @Override
     public void onNavigationFinished() {
         Intent returnIntent = new Intent();
-        returnIntent.putExtra("result", "finished");
-        getActivity().setResult(Activity.RESULT_OK,returnIntent);
+        getActivity().setResult(Activity.RESULT_CANCELED,returnIntent);
         getActivity().finish();
     }
 
